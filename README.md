@@ -27,6 +27,11 @@ pip install anemoi-models==0.6.0
 pip install anemoi-graphs==0.6.0
 pip install anemoi-datasets==0.5.23
 pip install "earthkit-regrid==0.4.0" "ecmwf-opendata>=0.3.19"
+```
+
+* Before installing falsh_attn, need to install cuda first.
+```
+conda install -c nvidia cuda-toolkit=12.4
 pip install flash_attn
 ```
 
@@ -92,6 +97,12 @@ sbatch slurm_aifs_ens_1000.sh
 
 - **Anemoi Inference Configuration Guide: top-level configuration**  
   [https://anemoi.readthedocs.io/projects/inference/en/latest/inference/configs/top-level.html](https://anemoi.readthedocs.io/projects/inference/en/latest/inference/configs/top-level.html)
+
+---
+Common errors:
+1. errors when loading the model: flash_attn version + cuda
+import flash_attn_2_cuda as flash_attn_gpu
+ImportError: /lib64/libc.so.6: version `GLIBC_2.32' not found (required by /perm/swe0632/conda/envs/env_test_anemoi/lib/python3.11/site-packages/flash_attn_2_cuda.cpython-311-x86_64-linux-gnu.so)
 
 ---
 
