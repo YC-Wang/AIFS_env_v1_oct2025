@@ -83,6 +83,9 @@ Submit the job script:
 sbatch slurm_aifs_ens_1000.sh
 ```
 
+When the run is successfully started, you can start to see output grib files in the output directory in the configuration file.
+Notes: The output file is in the mixed format of grib1 and grib2. Need to divide them first with wgrib and wgrib2 before using cdo.
+
 ---
 
 ## 🔍 References
