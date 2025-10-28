@@ -32,13 +32,8 @@ pip install "earthkit-regrid==0.4.0" "ecmwf-opendata>=0.3.19"
 * Before installing falsh_attn, need to install cuda first.
 ```
 conda install -c nvidia cuda-toolkit=12.4
-pip install flash_attn
+pip install flash_attn==2.7.3
 ```
-
-* Some version correction may be needed:
-1. The right cuda version needs to be installed during the process.
-2. reverse the anemoi.utils version.
-> conda install anemoi.utils=0.4.22
 ---
 
 ## II. Test the Environment
@@ -103,6 +98,9 @@ Common errors:
 1. errors when loading the model: flash_attn version + cuda
 import flash_attn_2_cuda as flash_attn_gpu
 ImportError: /lib64/libc.so.6: version `GLIBC_2.32' not found (required by /perm/swe0632/conda/envs/env_test_anemoi/lib/python3.11/site-packages/flash_attn_2_cuda.cpython-311-x86_64-linux-gnu.so)
+
+2. reverse the anemoi.utils version.
+> conda install anemoi.utils=0.4.22
 
 ---
 
