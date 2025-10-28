@@ -107,6 +107,6 @@ ImportError: /lib64/libc.so.6: version `GLIBC_2.32' not found (required by /perm
 ## 🤝 Acknowledgment
 
 This GitHub repository is a collaborative effort of the **ML Working Group of the HCLIM Consortium**.  
-Most scripts and workflows were developed by **Toni (AEMET)**.
+Most scripts and workflows were developed by **Toni Fernandez Andrade (AEMET)**.
 
 ---
